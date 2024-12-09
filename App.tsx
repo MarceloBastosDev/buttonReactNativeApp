@@ -1,10 +1,15 @@
+
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import symbolOff from './assets/off.jpg'
+import symbolOn from './assets/on.jpg'
 
 export default function App() {
+  
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Image source={symbolOn}></Image>
+      <Image source={symbolOff}></Image>
       <StatusBar style="auto" />
     </View>
   );
